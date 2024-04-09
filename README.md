@@ -8,3 +8,5 @@ My name is Fanqi Wan (万凡琦). You can call me Fanqi.
 - 📫 My email is: [E-mail](mailto:fanqiwan2018@gmail.com)
 
 View my [homepage](https://fanqiwan.github.io/).
+
+[![fanqiwan's GitHub stats](https://github-readme-stats.vercel.app/api?username=fanqiwan)](https://github.com/anuraghazra/github-readme-stats)
