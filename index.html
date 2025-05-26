@@ -20,7 +20,7 @@
               <p style="text-align:center">
                 <name>Fanqi Wan (万凡琦)</name>
               </p>
-              <p>Hello! My name is Fanqi Wan, and I am a final-year MS student at Sun Yat-sen University, advised by <a href="https://sites.google.com/site/xiaojunquan/">Prof. Xiaojun Quan</a>. Before this, I received my Bachelor's degree from Xi'an Jiaotong University. Previously, I conducted my internship at Tencent AI Lab (2023.03-2024.05), where I am mentored by <a href="https://timhuang1.github.io/">Dr. Xinting Huang</a> and <a href="https://scholar.google.com/citations?user=aSJcgQMAAAAJ&hl=zh-CN">Dr. Wei Bi</a>. Now, I am currently conducting my internship at ByteDance Doubao (Seed) LLM Team (2024.06-Now).
+              <p>Hello! My name is Fanqi Wan, and I am a final-year MS student at Sun Yat-sen University, advised by <a href="https://sites.google.com/site/xiaojunquan/">Prof. Xiaojun Quan</a>. Before this, I received my Bachelor's degree from Xi'an Jiaotong University. Previously, I conducted my internship at Tencent AI Lab (2023.03-2024.05), ByteDance Seed (2024.06-2025.02), and Alibaba Tongyi (2025.03-Now).
                 </p>
               <p style="text-align:center">
                   <a href="mailto:fanqiwan2018@gmail.com">Email</a>  /
@@ -42,7 +42,7 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
               <p>
-                My main research interests focused on deep learning for natural language generation. Previously, my work primarily focused on dialogue systems. After the emergence of large language models (LLMs), my research direction shifted towards efficient alignment (e.g., developing LLMs for specific domains, mitigating hallucinations of LLMs, self-improving of LLMs) and knowledge fusion (e.g., combining the strengths of LLMs with diverse structures/scales/functionarities). Representative papers are <span class="highlight">highlighted</span>.
+                My main research interests focused on deep learning for natural language generation. Previously, my work primarily focused on dialogue systems. After the emergence of large language models (LLMs), my research direction shifted towards LLM alignment (e.g., domain-specific LLMs, factual LLMs, self-improving LLMs, long-context LLMs, reasoning LLMs) and knowledge fusion (e.g., combining the strengths of LLMs with diverse structures/scales/functionarities). Representative papers are <span class="highlight">highlighted</span>.
               </p>
             </td>
           </tr>
@@ -54,6 +54,68 @@
     <tr>
       <td colspan="2" style="padding:20px;text-align:left;font-weight:bold;background-color:#ffffff;">
         Knowledge Fusion
+      </td>
+    </tr>
+	    
+    <tr>
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <img src="images/fusechat3.png" alt="PontTuset" width="160" style="border-style: none">
+      </td>
+      <td width="75%" valign="middle">
+        <a href="https://arxiv.org/abs/2503.04222" id="conf_fusechat3">
+          <papertitle><span class="highlight">FuseChat-3.0: Preference Optimization Meets Heterogeneous Model Fusion</span></papertitle>
+        </a>
+        <br>
+	Ziyi Yang,
+        <strong>Fanqi Wan</strong>,
+	Longguang Zhong,
+	Canbing Huang,
+	Guosheng Liang,
+	Xiaojun Quan
+        <br>
+        <em>ICLR SCI-FM Workshop</em>, 2025
+        <br>
+        <a href="https://github.com/fanqiwan/FuseLLM">[GitHub]</a>
+        /
+	<a href="https://huggingface.co/collections/Wanfq/fusechat-30-675aab8d5b0522bba020b43c">[HF]</a>
+        /
+        <a href="https://arxiv.org/abs/2503.04222">[Paper]</a>
+	/
+	<a href="https://huggingface.co/papers/2503.04222">[HF Daily Papers]</a>
+	/
+	<a href="https://www.reddit.com/r/LocalLLaMA/comments/1hd22cq/fusechat30_preference_optimization_for_implicit/?rdt=45331">[r/LocalLLaMA]</a>
+	/
+	<a href="https://mp.weixin.qq.com/s/xI_GLkO0eskwayV_TveuUg">[魔搭社区]</a>
+	/
+	<a href="https://huggingface.co/blog/Wanfq/fusechat-3">[Blog]</a>
+	/
+	<a href="https://slit-ai.github.io/FuseChat-3.0">[Website]</a>
+        <p></p>
+        <p>We introduce FuseChat-3.0, a suite of large language models (LLMs) developed by integrating the strengths of heterogeneous source LLMs into more compact target LLMs. Using Llama-3.1-8B-Instruct as the target model, it demonstrates <strong>remarkable gains of 37.1 points and 30.1 points on AlpacaEval-2 and Arena-Hard</strong>, respectively.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <img src="images/fuserl.png" alt="PontTuset" width="160" style="border-style: none">
+      </td>
+      <td width="75%" valign="middle">
+        <a href="https://arxiv.org/abs/2504.06562" id="conf_fuserl">
+          <papertitle><span class="highlight">FuseRL: Dense Preference Optimization for Heterogeneous Model Fusion</span></papertitle>
+        </a>
+        <br>
+	Longguang Zhong*,
+        <strong>Fanqi Wan*</strong>,
+	Ziyi Yang,
+	Guosheng Liang,
+	Tianyuan Shi,
+	Xiaojun Quan
+        <br>
+        <em>Tech Report</em>, 2025
+        <br>
+        <a href="https://arxiv.org/abs/2504.06562">[Paper]</a>
+        <p></p>
+        <p>We propose FuseRL, a novel two-stage framework comprising FuseSFT and FusePO to maximize the utilization of source LLMs. Using Llama-3.1-8B-Instruct as the target model, our approach achieves <strong>state-of-the-art performance among 8B LLMs on AlpacaEval-2 and Arena-Hard</strong>.</p>
       </td>
     </tr>
 
@@ -72,7 +134,7 @@
 	Tianyuan Shi,
 	Xiaojun Quan
         <br>
-        <em>Tech Report</em>, 2024
+        <em>ICLR</em>, 2025
         <br>
         <a href="https://github.com/fanqiwan/FuseLLM">[GitHub]</a>
         /
@@ -81,14 +143,6 @@
         <a href="https://arxiv.org/abs/2412.03187">[Paper]</a>
 	/
 	<a href="https://huggingface.co/papers?date=2024-12-05">[HF Daily Papers]</a>
-	/
-	<a href="https://www.reddit.com/r/LocalLLaMA/comments/1hd22cq/fusechat30_preference_optimization_for_implicit/?rdt=45331">[r/LocalLLaMA]</a>
-	/
-	<a href="https://mp.weixin.qq.com/s/xI_GLkO0eskwayV_TveuUg">[魔搭社区]</a>
-	/
-	<a href="https://huggingface.co/blog/Wanfq/fusechat-3">[Blog]</a>
-	/
-	<a href="https://slit-ai.github.io/FuseChat-3.0">[Website]</a>
         <p></p>
         <p>We propose Weighted-Reward Preference Optimization (WRPO), which leverages preference optimization between the source LLMs and the target LLM to transfer their capabilities effectively. WRPO achieves <strong>a LC Win Rate of 55.9% against GPT-4-Preview-1106 on AlpacaEval-2 and a Win Rate of 46.2% against GPT-4-0314 on Arena-Hard</strong>.</p>
       </td>
@@ -192,10 +246,175 @@
 
     <tr>
       <td colspan="2" style="padding:20px;text-align:left;font-weight:bold;background-color:#ffffff;">
-        Efficient Alignment
+        LLM Alignment
       </td>
     </tr>
 
+    <tr>
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <img src="images/l1.png" alt="PontTuset" width="160" style="border-style: none">
+      </td>
+      <td width="75%" valign="middle">
+        <a href="https://arxiv.org/abs/2505.17667" id="conf_l1">
+          <papertitle><span class="highlight">QwenLong-L1: Towards Long-Context Large Reasoning Models with Reinforcement Learning</span></papertitle>
+        </a>
+        <br>
+	<strong>Fanqi Wan</strong>,
+	Weizhou Shen,
+	Shengyi Liao,
+	Yingcheng Shi,
+	Chenliang Li,
+	Ziyi Yang,
+	Ji Zhang,
+	Fei Huang,
+	Jingren Zhou,
+	Ming Yan
+        <br>
+        <em>Tech Report</em>, 2025
+        <br>
+        <a href="https://github.com/Tongyi-Zhiwen/QwenLong-L1">[GitHub]</a>
+        /
+	<a href="https://huggingface.co/Tongyi-Zhiwen/QwenLong-L1-32B">[HF]</a>
+        /
+        <a href="https://arxiv.org/abs/2505.17667">[Paper]</a>
+	/
+	<a href="https://huggingface.co/papers/2505.17667">[HF Daily Papers]</a>
+        <p></p>
+        <p>We propose QwenLong-L1, a framework that adapts short-context LRMs to long-context scenarios via progressive context scaling. <strong>QwenLong-L1-32B outperforms flagship LRMs like OpenAI-o3-mini and Qwen3-235B-A22B, achieving performance on par with Claude-3.7-Sonnet-Thinking</strong></p>
+      </td>
+    </tr>
+	    
+    <tr>
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <img src="images/solopo.png" alt="PontTuset" width="160" style="border-style: none">
+      </td>
+      <td width="75%" valign="middle">
+        <a href="https://arxiv.org/abs/2505.11166" id="conf_solopo">
+          <papertitle>SoLoPO: Unlocking Long-Context Capabilities in LLMs via Short-to-Long Preference Optimization</papertitle>
+        </a>
+        <br>
+	Huashan Sun, 
+	Shengyi Liao, 
+	Yansen Han, 
+	Yu Bai, 
+	Yang Gao, 
+	Cheng Fu, 
+	Weizhou Shen, 
+	<strong>Fanqi Wan</strong>,
+	Ming Yan, 
+	Ji Zhang, 
+	Fei Huang
+        <br>
+        <em>Tech Report</em>, 2025
+        <br>
+        <a href="https://arxiv.org/abs/2505.11166">[Paper]</a>
+        <p></p>
+        <p>We propose a framework named Short-to-Long Preference Optimization (SoLoPO), decoupling long-context preference optimization (PO) into two components: short-context PO and short-to-long reward alignment (SoLo-RA), supported by both theoretical and empirical evidence.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <img src="images/mutual.png" alt="PontTuset" width="160" style="border-style: none">
+      </td>
+      <td width="75%" valign="middle">
+        <a href="https://arxiv.org/abs/xxxx.xxxxx" id="conf_mutual">
+          <papertitle>Mutual-Taught for Co-adapting Policy and Reward Models</papertitle>
+        </a>
+        <br>
+	Tianyuan Shi,
+	Canbin Huang, 
+	Fanqi Wan, 
+	Longguang Zhong, 
+	Ziyi Yang,
+	Weizhou Shen, 
+	Xiaojun Quan,
+	Ming Yan
+        <br>
+        <em>ACL</em>, 2025
+        <br>
+        <a href="https://arxiv.org/abs/xxxx.xxxxx">[Paper]</a>
+        <p></p>
+        <p>we propose Mutual-Taught, a self-training method that iteratively improves both the policy model and reward model without requiring additional human annotation.</p>
+      </td>
+    </tr>	
+	    
+    <tr>
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <img src="images/ads.png" alt="PontTuset" width="160" style="border-style: none">
+      </td>
+      <td width="75%" valign="middle">
+        <a href="https://openreview.net/pdf?id=5YCZZSEosw" id="conf_ads">
+          <papertitle><span class="highlight">Let Large Languague Models Find the Data to Train Themselves</span></papertitle>
+        </a>
+        <br>
+        <strong>Fanqi Wan</strong>,
+        Deng Cai,
+        Shijue Huang,
+        Xiaojun Quan,
+        Mingxuan Wang
+        <br>
+        <em>Tech Report</em>, 2025
+        <br>
+        <a href="https://openreview.net/pdf?id=5YCZZSEosw">[Paper]</a>
+        <p></p>
+        <p>We propose ADS, a self-improving framework where models can invoke APIs to crawl and/or generate tailored datasets from various resources and environments, and retrain themselves.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <img src="images/adpa.png" alt="PontTuset" width="160" style="border-style: none">
+      </td>
+      <td width="75%" valign="middle">
+        <a href="https://arxiv.org/abs/2502.17927" id="conf_adpa">
+          <papertitle><span class="highlight">Advantage-Guided Distillation for Preference Alignment in Small Language Models</span></papertitle>
+        </a>
+        <br>
+	Shiping Gao, 
+	<strong>Fanqi Wan</strong>,
+	Jiajian Guo, 
+	Xiaojun Quan, 
+	Qifan Wang
+        <br>
+        <em>ICLR Spotlight</em>, 2025
+        <br>
+	<a href="https://github.com/SLIT-AI/ADPA">[GitHub]</a>
+	/
+	<a href="https://arxiv.org/abs/2502.17927">[Paper]</a>
+	/
+	<a href="https://mp.weixin.qq.com/s/tP_KoTZ8AiFYVk_ReNZ5Ug">[Paper Weekly]</a>
+        <p></p>
+        <p>We propose Advantage-Guided Distillation for Preference Alignment (ADPA), which leverages an advantage function from the aligned teacher to deliver more nuanced, distribution-level reward signals for the student's alignment.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <img src="images/ske.png" alt="PontTuset" width="160" style="border-style: none">
+      </td>
+      <td width="75%" valign="middle">
+        <a href="https://ojs.aaai.org/index.php/AAAI/article/view/34590" id="conf_ske">
+          <papertitle>Empowering Self-Learning of LLMs: Inner Knowledge Explicitation as a Catalyst</papertitle>
+        </a>
+        <br>
+	Shijue Huang,
+	Wanjun Zhong,
+	Deng Cai,
+        <strong>Fanqi Wan</strong>,
+        Chengyi Wang,
+        Mingxuan Wang,
+	Mu Qiao,
+	Ruifeng Xu
+        <br>
+        <em>AAAI</em>, 2025
+        <br>
+        <a href="https://ojs.aaai.org/index.php/AAAI/article/view/34590">[Paper]</a>
+        <p></p>
+        <p>We introduces a Self Knowledge Explicitation Learning (SKE-Learn) framework, which equips the LLMs with meta-skills to explicitly extract, verify and utilize inner knowledge for reasoning.</p>
+      </td>
+    </tr>
+	    
     <tr>
       <td style="padding:20px;width:25%;vertical-align:middle">
         <img src="images/seft.png" alt="PontTuset" width="160" style="border-style: none">
@@ -213,8 +432,6 @@
         <br>
         <em>EMNLP Findings</em>, 2024
         <br>
-        <a href="https://github.com/xxxx/xxxx">[GitHub]</a>
-	/
         <a href="https://arxiv.org/abs/2406.10813">[Paper]</a>
         <p></p>
         <p>We introduce self-evolution fine-tuning for policy optimization, which eliminates the need for annotated data samples during alignment.</p>
@@ -346,6 +563,43 @@
 
     <tr>
       <td style="padding:20px;width:25%;vertical-align:middle">
+        <img src="images/cprs.png" alt="PontTuset" width="160" style="border-style: none">
+      </td>
+      <td width="75%" valign="middle">
+        <a href="https://arxiv.org/abs/2505.18092" id="conf_cprs">
+          <papertitle>QwenLong-CPRS: Towards ∞-LLMs with Dynamic Context Optimization</papertitle>
+        </a>
+        <br>
+	Weizhou Shen, 
+	Chenliang Li, 
+	<strong>Fanqi Wan</strong>,
+	Shengyi Liao, 
+	Shaopeng Lai, 
+	Bo Zhang, 
+	Yingcheng Shi, 
+	Yuning Wu, 
+	Gang Fu, 
+	Zhansheng Li, 
+	Bin Yang, 
+	Ji Zhang, 
+	Fei Huang, 
+	Jingren Zhou,
+	Ming Yan
+        <br>
+        <em>Tech Report</em>, 2025
+        <br>
+        <a href="https://github.com/Tongyi-Zhiwen/QwenLong-CPRS">[GitHub]</a>
+        /
+	<a href="https://huggingface.co/Tongyi-Zhiwen/QwenLong-CPRS-7B">[HF]</a>
+        /
+        <a href="https://arxiv.org/abs/2505.18092">[Paper]</a>
+        <p></p>
+        <p>We propose QwenLong-CPRS, which implemented through a novel dynamic context optimization mechanism to enable multi-granularity context compression guided by natural language instructions, achieving both efficiency gains and improved performance.</p>
+      </td>    
+    </tr>    
+	    
+    <tr>
+      <td style="padding:20px;width:25%;vertical-align:middle">
         <img src="images/blockpruner.png" alt="PontTuset" width="160" style="border-style: none">
       </td>
       <td width="75%" valign="middle">
@@ -359,7 +613,7 @@
         Xiaojun Quan,
 	Liangzhi Li
         <br>
-        <em>Tech Report</em>, 2024
+        <em>ACL Findings</em>, 2025
         <br>
         <a href="https://github.com/MrGGLS/BlockPruner">[GitHub]</a>
         /
